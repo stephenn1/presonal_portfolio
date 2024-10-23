@@ -15,7 +15,7 @@ export const servicesData = [
   {
     image: develop,
     title: "Web Development",
-    text: "Custom websites built with modern front-end technologies like React and Tailwind CSS.",
+    text: "Custom websites built with modern front-end technologies like Next.js, React.js and Tailwind CSS.",
   },
   {
     image: host,

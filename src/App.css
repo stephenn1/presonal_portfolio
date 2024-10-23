@@ -1,0 +1,4 @@
+.marquee-container {
+  overflow: hidden; /* Hide any overflow */
+  white-space: nowrap; /* Prevent line breaks if you’re using inline-block or similar */
+}

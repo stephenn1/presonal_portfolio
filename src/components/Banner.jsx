@@ -8,7 +8,7 @@ const Banner = () => {
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 100,
-    delaySpeed: 3000,
+    delaySpeed: 2000,
   });
 
   return (

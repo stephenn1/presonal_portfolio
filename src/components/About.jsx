@@ -9,11 +9,11 @@ const About = () => {
     >
       <div className="pb-16 max-w-7xl mx-auto sm:px-6 px-4 lg:px-16 flex justify-between flex-col md:flex-row">
         {/* Img Area */}
-        <div className="mt-5 w-2/4">
+        <div className="mt-5 w-2/4 sm:w-full">
           <img src={aboutImg} alt="about-img" className="w-10/12 h-full" />
         </div>
         {/* Text Area */}
-        <div className="mt-48 w-2/4  ">
+        <div className="mt-48 w-2/4 sm:w-full  ">
           <h2 className="text-[40px] font-bold font-primary text-primary">
             About Me
           </h2>

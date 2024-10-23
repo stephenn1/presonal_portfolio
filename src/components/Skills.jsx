@@ -11,7 +11,8 @@ import react from "../assets/react2.png";
 import typescript from "../assets/typescript2.png";
 import next from "../assets/next2.png";
 import redux from "../assets/redux.png";
-
+import Marquee from "react-fast-marquee";
+import "../App.css";
 const Skills = () => {
   return (
     <section
@@ -23,21 +24,51 @@ const Skills = () => {
           <h2 className="text-[40px] font-bold font-primary text-primary text-center">
             My Skills
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mt-5">
-            <img src={figma} alt="figma" />
-            <img src={html} alt="html" />
-            <img src={css} alt="css" />
-            <img src={javascript} alt="javascript" />
-            <img src={tailwind} alt="tailwind" />
-            <img src={react} alt="react" />
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
-            <img src={redux} alt="figma" />
-            <img src={typescript} alt="html" />
-            <img src={next} alt="css" />
-            <img src={github} alt="javascript" />
-            <img src={firebase} alt="tailwind" />
-            <img src={framer} alt="react" />
+          <Marquee pauseOnHover>
+            <img src={figma} alt="figma" className="w-40 h-40 object-contain" />
+            <img src={html} alt="html" className="w-40 h-40 object-contain" />
+            <img src={css} alt="css" className="w-40 h-40 object-contain" />
+            <img
+              src={javascript}
+              alt="javascript"
+              className="w-40 h-40 object-contain"
+            />
+            <img
+              src={tailwind}
+              alt="tailwind"
+              className="w-40 h-40 object-contain"
+            />
+            <img src={react} alt="react" className="w-40 h-40 object-contain" />
+          </Marquee>
+          <div className="overflow-hidden">
+            <Marquee pauseOnHover direction="rigth">
+              <img
+                src={redux}
+                alt="figma"
+                className="w-40 h-40 object-contain"
+              />
+              <img
+                src={typescript}
+                alt="html"
+                className="w-40 h-40 object-contain"
+              />
+              <img src={next} alt="css" className="w-40 h-40 object-contain" />
+              <img
+                src={github}
+                alt="javascript"
+                className="w-40 h-40 object-contain"
+              />
+              <img
+                src={firebase}
+                alt="tailwind"
+                className="w-40 h-40 object-contain"
+              />
+              <img
+                src={framer}
+                alt="react"
+                className="w-40 h-40 object-contain"
+              />
+            </Marquee>
           </div>
         </div>
       </div>
