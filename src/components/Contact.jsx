@@ -17,7 +17,7 @@ const Contact = () => {
           {/* Let's Talk section */}
           <div className="md:w-1/2">
             <h2 className="text-[30px] font-bold text-primary">Let's Talk</h2>
-            <p className="mt-5 font-medium text-xl font-secondary mb-4">
+            <p className="mt-5 font-medium md:text-xl text-lg font-secondary mb-4">
               I’m open to discussing web development projects and partnership
               opportunities.
             </p>
@@ -93,7 +93,7 @@ const Contact = () => {
             <a
               type="submit"
               href="#contact"
-              className="font-medium text-lg font-secondary py-2 px-5 bg-[#007AFF] rounded-3xl text-white"
+              className="font-medium text-lg font-secondary py-2 px-5 bg-[#007AFF] rounded-3xl text-white sm:mx-auto"
             >
               Send
             </a>

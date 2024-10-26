@@ -6,13 +6,13 @@ const Card = () => {
     <section className="bg-gradient-to-r from-[#E5F1FF] to-[#B5D8FF] via-[#E5F1FF] via-65% dark:bg-gradient-to-r dark:from-[#151C25] dark:via-[#151C25] dark:via-50% dark:to-[#4F698B]">
       <div className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
         <div>
-          <h2 className="text-[40px] pt-20 font-bold font-primary text-primary text-center">
+          <h2 className="text-[40px] pt-5 font-bold font-primary text-primary text-center">
             What I Do
           </h2>
         </div>
         {/* Card Slider */}
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-3 mt-16 gap-14">
+          <div className="grid grid-cols-1 sd:grid-cols-2 lg:grid-cols-3 mt-16 gap-x-14 gap-y-8 pb-16">
             {servicesData.map((card, index) => (
               <div key={index} className="w-full bg-white rounded-2xl mb-5 p-6">
                 <div className=" flex justify-center items-center ">

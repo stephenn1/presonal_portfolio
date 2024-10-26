@@ -101,7 +101,7 @@ const Navbar = () => {
         {/* Mobile menu */}
         {isOpen && (
           <div className="md:hidden bg-white dark:bg-slate-800 dark:text-white shadow-md">
-            <div className="px-4 pt-2 pb-3 space-y-3 sm:p-3">
+            <div className="px-4 pt-2 pb-3 space-y-3 sm:p-3 bg-gradient-to-r from-[#E5F1FF] to-[#B5D8FF] via-[#E5F1FF] via-65% dark:bg-gradient-to-r dark:from-[#151C25] dark:via-[#151C25] dark:via-50% dark:to-[#4F698B] dark:text-white">
               {menuItems.map((items, index) => (
                 <a
                   onClick={() => handleMenuClick(items.name)}
@@ -114,9 +114,9 @@ const Navbar = () => {
                   {items.name}
                 </a>
               ))}
-              <div className="">
-                <a href="#contact">Hire Me</a>
-              </div>
+            </div>
+            <div className="bg-primary rounded-lg ">
+              <a href="#contact">Hire Me</a>
             </div>
           </div>
         )}

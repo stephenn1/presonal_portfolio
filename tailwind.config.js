@@ -8,6 +8,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        sd: "667px",
+      },
       colors: {
         primary: "#007AFF",
       },

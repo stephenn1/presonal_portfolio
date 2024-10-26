@@ -16,7 +16,7 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="h-screen dark:bg-[#151C25] text-black dark:text-white"
+      className=" dark:bg-[#151C25] text-black dark:text-white"
     >
       <div className=" max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
         <h2 className="text-[40px] font-bold font-primary text-primary text-center pt-20">
@@ -34,10 +34,17 @@ const Portfolio = () => {
               >
                 <h3 className="text-2xl font-semibold py-5">{item.title}</h3>
                 <div>
-                  <img src={item.image} alt="image-one" />
+                  <img
+                    src={item.image}
+                    alt="image-one"
+                    className="w-[400px] h-[300px]"
+                  />
                 </div>
-                <p className="px-10">{item.descript}</p>
-                <p>Technologies:{item.tech}</p>
+                <p className="p-5 text-lg">{item.descript}</p>
+                <p className="space-x-3 text-lg">Technologies: {item.tech}</p>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  Go Live
+                </a>
               </div>
             );
           })}
