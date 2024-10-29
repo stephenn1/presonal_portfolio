@@ -1,10 +1,11 @@
 // import images
 import back from "../assets/services/back.png";
-import design from "../assets/services/design.png";
+
 import develop from "../assets/services/develop.png";
 import manage from "../assets/services/manage.png";
 import perform from "../assets/services/perform.png";
 import host from "../assets/services/host.png";
+import design from "../assets/services/design.png";
 
 export const servicesData = [
   {

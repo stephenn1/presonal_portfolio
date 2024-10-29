@@ -19,7 +19,7 @@ const Portfolio = () => {
       className=" dark:bg-[#151C25] text-black dark:text-white"
     >
       <div className=" max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
-        <h2 className="text-[40px] font-bold font-primary text-primary text-center pt-20">
+        <h2 className="text-5xl font-bold font-primary text-primary text-center pt-16">
           My Portfolio
         </h2>
         <div className="justify-center items-center flex relative">
@@ -28,20 +28,26 @@ const Portfolio = () => {
             return (
               <div
                 key={index}
-                className={` items-center mt-20 mx-7 ${
+                className={` items-center mt-16 mx-7 mb-4 ${
                   slide === index ? "flex flex-col" : "hidden"
                 }`}
               >
-                <h3 className="text-2xl font-semibold py-5">{item.title}</h3>
+                <h3 className="text-3xl font-semibold text-primary py-5">
+                  {item.title}
+                </h3>
                 <div>
                   <img
                     src={item.image}
                     alt="image-one"
-                    className="w-[400px] h-[300px]"
+                    className="w-[300px] md:w-[400px] h-auto"
                   />
                 </div>
-                <p className="p-5 text-lg">{item.descript}</p>
-                <p className="space-x-3 text-lg">Technologies: {item.tech}</p>
+                <p className="p-5 md:text-xl text-base md:w-3/4">
+                  {item.descript}
+                </p>
+                <p className="space-x-3 text-base md:text-lg">
+                  Technologies: {item.tech}
+                </p>
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   Go Live
                 </a>

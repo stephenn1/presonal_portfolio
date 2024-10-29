@@ -18,7 +18,7 @@ const About = () => {
         </div>
         {/* Text Area */}
         <div className="md:mt-48 mt-5 md:w-2/4 w-full  text-center md:text-left">
-          <h2 className="text-[40px] font-bold font-primary text-primary">
+          <h2 className="text-5xl font-bold font-primary text-primary">
             About Me
           </h2>
           <p className=" font-medium md:text-lg font-secondary text-base">

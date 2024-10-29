@@ -10,7 +10,7 @@ const Contact = () => {
       className="bg-gradient-to-r from-[#E5F1FF] to-[#B5D8FF] via-[#E5F1FF] via-65% dark:bg-gradient-to-r dark:from-[#151C25] dark:via-[#151C25] dark:via-50% dark:to-[#4F698B] dark:text-white"
     >
       <div className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
-        <h2 className="text-[40px] font-bold font-primary text-primary text-center pt-14">
+        <h2 className="text-5xl font-bold font-primary text-primary text-center pt-14">
           Contact
         </h2>
         <div className="flex flex-col md:flex-row py-14 space-y-10 md:space-y-0 md:space-x-10">
