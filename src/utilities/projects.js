@@ -1,22 +1,50 @@
-import project from "../assets/images/project1.png";
-import port from "../assets/images/port1.png";
+import design from "../assets/images/abstract01.jpg";
+import develop from "../assets/images/abstract02.jpg";
+import next from "../assets/images/abstract03.jpg";
+import ahead from "../assets/images/abstract04.jpg";
+import forward from "../assets/images/abstract02.jpg";
+import nex from "../assets/images/next.svg";
+import types from "../assets/images/ts.svg";
+import react from "../assets/images/re.svg";
+import frame from "../assets/images/fm.svg";
+import tail from "../assets/images/tail.svg";
 
 const myProjest = [
   {
-    title: "Prime Future",
-    image: port,
+    id: 1,
+    title: "Prime futures-pip",
     descript:
-      "Prime Futures Pip is a dynamic trading platform designed to empower users in navigating the financial markets with precision and confidence",
-    tech: ["Next.js", " ", "Typescript", " ", "Tailwind", " ", "Framer Motion"],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolorem ipsa pariatur? Quae, earum",
+    image: design,
+    tech: [nex, types, tail, frame],
     link: "https://vercel.com/api/toolbar/link/prime-futures-pip-plum.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
   },
   {
-    title: "Positivus Agency",
-    image: project,
+    id: 2,
+    title: "Positivus",
     descript:
-      "Navigate the digital landscape with our agency, where we drive business growth through SEO, PPC, social media, and content creation.",
-    tech: ["React", " ", "Tailwind", " ", "Framer Motion"],
-    link: "https://vercel.com/api/toolbar/link/positivus-agency-seven.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolorem ipsa pariatur? Quae, earum",
+    image: next,
+    tech: [react, tail, frame],
+    link: "https://vercel.com/api/toolbar/link/prime-futures-pip-plum.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
+  },
+  {
+    id: 3,
+    title: "Banking App",
+    descript:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolorem ipsa pariatur? Quae, earum",
+    image: ahead,
+    tech: [nex, types, tail, frame],
+    link: "https://vercel.com/api/toolbar/link/prime-futures-pip-plum.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
+  },
+  {
+    id: 4,
+    title: "Banking App",
+    descript:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolorem ipsa pariatur? Quae, earum",
+    image: ahead,
+    tech: [nex, types, tail, frame],
+    link: "https://vercel.com/api/toolbar/link/prime-futures-pip-plum.vercel.app?via=project-dashboard-alias-list&p=1&page=/",
   },
 ];
 

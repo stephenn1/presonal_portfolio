@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`w-full text-black dark:text-white fixed top-0 z-10 transition-colors duration-300 ${
+        className={`w-full text-black dark:text-white fixed top-0 z-20 transition-colors duration-300 ${
           color ? "bg-white dark:bg-slate-800 shadow-md" : "bg-transparent"
         }`}
       >

@@ -2,8 +2,44 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "646c95c3-cba6-4210-b5db-d97902717ec0");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message Sent Successfully",
+        icon: "success",
+      });
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
+  };
+
   return (
     <section
       id="contact"
@@ -43,7 +79,7 @@ const Contact = () => {
 
           {/* Form Section */}
           <div className="md:w-1/2">
-            <form action="" className="w-full">
+            <form onSubmit={onSubmit} className="w-full">
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -53,10 +89,13 @@ const Contact = () => {
                 </label>
                 <input
                   id="name"
+                  name="name"
                   type="text"
-                  className="block w-full md:w-2/3 py-2 px-3 rounded-sm focus:outline-none"
+                  className="block w-full md:w-2/3 py-2 px-3 rounded-sm focus:outline-none bg-white dark:bg-[#151C25] text-black dark:text-white"
                   required
                   placeholder="Enter Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="mb-4">
@@ -68,10 +107,13 @@ const Contact = () => {
                 </label>
                 <input
                   id="email"
+                  name="email"
                   type="email"
-                  className="block w-full md:w-2/3 py-2 px-3 rounded-sm focus:outline-none"
+                  className="block w-full md:w-2/3 py-2 px-3 rounded-sm focus:outline-none bg-white dark:bg-[#151C25] text-black dark:text-white"
                   required
                   placeholder="Enter Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="mb-10">
@@ -83,20 +125,22 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="4"
-                  className="block w-full md:w-2/3 py-2 px-3 rounded-sm focus:outline-none"
+                  className="block w-full md:w-2/3 py-2 px-3 rounded-sm focus:outline-none bg-white dark:bg-[#151C25] text-black dark:text-white"
                   required
                   placeholder="Type your message here..."
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
+              <button
+                type="submit"
+                className="font-medium text-lg font-secondary py-2 px-5 bg-[#007AFF] rounded-3xl text-white sm:mx-auto"
+              >
+                Send
+              </button>
             </form>
-            <a
-              type="submit"
-              href="#contact"
-              className="font-medium text-lg font-secondary py-2 px-5 bg-[#007AFF] rounded-3xl text-white sm:mx-auto"
-            >
-              Send
-            </a>
           </div>
         </div>
       </div>
