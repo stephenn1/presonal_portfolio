@@ -16,7 +16,7 @@ const Portfolio = () => {
           {myProject.map(({ id, title, descript, image, tech, link }) => (
             <div
               key={id}
-              className=" rounded-xl flex justify-center items-center sm:w-96 w-[80vw] shadow-2xl dark:bg-[#4F698B]"
+              className=" rounded-t-xl flex justify-center items-center sm:w-96 w-[80vw] shadow-2xl dark:bg-[#4F698B]"
             >
               <div title={title} href={link}>
                 <div className="relative flex items-center justify-center sm:w-96 w-[80vw] rounded-xl overflow-hidden h-[20vh] lg:h-[30vh] mb-7">
@@ -33,7 +33,7 @@ const Portfolio = () => {
                     {tech.map((icon, index) => (
                       <div
                         key={icon}
-                        className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border border-white/[0.2] rounded-full shadow-lg bg-primary lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index * 2}px)`,
                         }}
@@ -50,7 +50,7 @@ const Portfolio = () => {
                     >
                       Check Live Site
                     </a>
-                    <FaLocationArrow className="ms-3 text-primary" />
+                    <FaLocationArrow className="ms-1 text-primary" />
                   </div>
                 </div>
               </div>

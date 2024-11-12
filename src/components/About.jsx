@@ -13,7 +13,7 @@ const About = () => {
           <img
             src={aboutImg}
             alt="about-img"
-            className="md:w-[400px] md:h-[500px] w-[300px] h-[350px] rounded-full md:rounded-none"
+            className="md:w-[400px] md:h-[500px] w-[200px] h-[250px] rounded-full md:rounded-none"
           />
         </div>
         {/* Text Area */}

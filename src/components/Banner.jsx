@@ -12,8 +12,11 @@ const Banner = () => {
   });
 
   return (
-    <section className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16 text-black dark:text-white">
-      <div className="flex flex-col md:flex-row justify-between pb-10 md:pb-0">
+    <section
+      className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16 text-black dark:text-white"
+      id="home"
+    >
+      <div className="pt-24 flex flex-col md:flex-row justify-between pb-10 md:pb-0">
         {/* Text Area */}
         <div className="md:mt-44 mt-7 text-center md:text-left font-primary ">
           <h3 className="text-lg md:text-2xl font-semibold font-secondary">
@@ -44,7 +47,7 @@ const Banner = () => {
           <img
             src={whiteBanner2}
             alt="white-banner"
-            className="w-[200px] h-[300] md:w-full md:h-full rounded-full md:rounded-none"
+            className="w-[250px] h-[300] md:w-full md:h-full rounded-full md:rounded-none"
           />
         </div>
       </div>
