@@ -11,7 +11,9 @@ const Footer = () => {
         <div className="flex justify-between border-b-2 border-primary flex-col md:flex-row">
           {/* Stephen Section */}
           <div>
-            <h2 className="text-[30px] font-bold text-primary">Stephen</h2>
+            <h2 className="md:text-[25px] text-[20px]  font-bold text-primary">
+              Stephen
+            </h2>
             <p className="mt-5 font-medium md:text-xl text-lg font-secondary mb-4">
               Full-Stack Developer based in Nigeria, <br /> specializing in web
               design and development.
@@ -20,12 +22,12 @@ const Footer = () => {
           {/* Icons Section */}
           <div>
             <div>
-              <h2 className="text-[30px] font-bold text-primary">
+              <h2 className="md:text-[25px] text-[20px] font-bold text-primary">
                 Connect with me:
               </h2>
             </div>
 
-            <div className="py-5  flex space-x-4">
+            <div className="py-5  flex space-x-3">
               <a href="">
                 <img
                   src={whatsapp}
@@ -60,12 +62,12 @@ const Footer = () => {
         </div>
         <div className="flex justify-between">
           <div>
-            <p className="mt-5 font-medium text-base md:text-xl font-secondary mb-4">
+            <p className="mt-5 font-medium text-sm md:text-xl font-secondary mb-4">
               © 2024 Stephen. All rights reserved
             </p>
           </div>
           <div>
-            <p className="mt-5 font-medium text-base md:text-xl font-secondary mb-4">
+            <p className="mt-5 font-medium text-sm md:text-xl font-secondary mb-4">
               Privacy Teams of service.
             </p>
           </div>

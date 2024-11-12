@@ -46,13 +46,13 @@ const Contact = () => {
       className="bg-gradient-to-r from-[#E5F1FF] to-[#B5D8FF] via-[#E5F1FF] via-65% dark:bg-gradient-to-r dark:from-[#151C25] dark:via-[#151C25] dark:via-50% dark:to-[#4F698B] dark:text-white"
     >
       <div className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
-        <h2 className="text-5xl font-bold font-primary text-primary text-center pt-14">
+        <h2 className="text-4xl md:text-5xl font-bold font-primary text-primary text-center pt-14">
           Contact
         </h2>
         <div className="flex flex-col md:flex-row py-14 space-y-10 md:space-y-0 md:space-x-10">
           {/* Let's Talk section */}
           <div className="md:w-1/2">
-            <h2 className="text-[30px] font-bold text-primary">Let's Talk</h2>
+            <h2 className="text-[25px] font-bold text-primary">Let's Talk</h2>
             <p className="mt-5 font-medium md:text-xl text-lg font-secondary mb-4">
               I’m open to discussing web development projects and partnership
               opportunities.

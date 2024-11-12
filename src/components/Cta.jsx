@@ -4,10 +4,10 @@ import mailBox from "../assets/mail-box.png";
 
 const Cta = () => {
   return (
-    <section className="h-72 dark:bg-[#151C25] text-black dark:text-white">
+    <section className="h-80 dark:bg-[#151C25] text-black dark:text-white">
       <div className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
         <div>
-          <h2 className="md:text-[40px] text-2xl font-bold  pt-14 font-primary text-center ">
+          <h2 className="md:text-5xl text-2xl font-bold  pt-14 font-primary text-center ">
             Have a project in mind? <br /> Let’s talk about the next big thing
             <div className="inline-block mx-5 ">
               <div className="flex items-center space-x-5">

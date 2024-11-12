@@ -23,7 +23,7 @@ const Banner = () => {
             Hello!
           </h3>
           <h2 className="md:text-[40px] text-[25px] font-bold">I'm Stephen,</h2>
-          <h1 className="text-4xl md:text-6xl font-extrabold">
+          <h1 className="text-4xl w-max md:text-6xl font-extrabold">
             a Web <span className="text-primary">{text}</span>
             <Cursor
               cursorBlinking="false"

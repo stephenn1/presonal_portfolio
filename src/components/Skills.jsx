@@ -22,7 +22,7 @@ const Skills = () => {
     >
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-16">
         <div className="">
-          <h2 className="text-5xl font-bold font-primary text-primary text-center">
+          <h2 className="md:text-5xl text-4xl font-bold font-primary text-primary text-center">
             My Skills
           </h2>
 

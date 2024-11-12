@@ -6,7 +6,7 @@ const Card = () => {
     <section className="bg-gradient-to-r from-[#E5F1FF] to-[#B5D8FF] via-[#E5F1FF] via-65% dark:bg-gradient-to-r dark:from-[#151C25] dark:via-[#151C25] dark:via-50% dark:to-[#4F698B]">
       <div className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
         <div>
-          <h2 className="text-5xl pt-5 font-bold font-primary text-primary text-center">
+          <h2 className="md:text-5xl text-4xl pt-5 font-bold font-primary text-primary text-center">
             What I Do
           </h2>
         </div>

@@ -9,7 +9,7 @@ const Portfolio = () => {
       className=" dark:bg-[#151C25] text-black dark:text-white"
     >
       <div className=" max-w-7xl mx-auto sm:px-6 px-4 lg:px-16">
-        <h2 className="text-[40px] font-bold font-primary text-primary text-center pt-20">
+        <h2 className="md:text-5xl text-4xl font-bold font-primary text-primary text-center pt-20">
           Recent Projects
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-x-40 gap-y-10 py-10 ">
