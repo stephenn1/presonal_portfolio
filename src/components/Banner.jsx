@@ -16,9 +16,9 @@ const Banner = () => {
       className="max-w-7xl mx-auto sm:px-6 px-4 lg:px-16 text-black dark:text-white"
       id="home"
     >
-      <div className="pt-24 flex flex-col md:flex-row justify-between pb-36 md:pb-0">
+      <div className="pt-24 flex flex-col md:flex-row justify-between pb-10 md:pb-0">
         {/* Text Area */}
-        <div className="md:mt-44 mt-7 text-center md:text-left font-primary ">
+        <div className="md:mt-44 mt-10 text-center md:text-left font-primary ">
           <h3 className="text-lg md:text-2xl font-semibold font-secondary">
             Hello!
           </h3>
@@ -31,7 +31,7 @@ const Banner = () => {
               cursorColor="#007AFF"
             />
           </h1>
-          <p className="py-5 font-medium text-lg md:text-xl font-secondary mb-4">
+          <p className="py-4 font-medium text-lg md:text-xl font-secondary mb-4">
             I bring innovative ideas to life, <br />
             from creative design to flawless development.
           </p>
