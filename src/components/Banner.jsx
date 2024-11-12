@@ -47,7 +47,7 @@ const Banner = () => {
           <img
             src={whiteBanner2}
             alt="white-banner"
-            className="w-[250px] h-[300] md:w-full md:h-full rounded-full md:rounded-none"
+            className="w-[300px] h-[350px] md:w-full md:h-full rounded-full md:rounded-none"
           />
         </div>
       </div>
